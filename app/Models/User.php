@@ -27,4 +27,19 @@ class User extends Authenticatable
     {
         return $this->belongsTo(Role::class);
     }
+
+    public static function createUser(array $data)
+    {
+        return self::create($data);
+    }
+
+    public function updateUser(array $data)
+    {
+        return $this->update($data);
+    }
+
+    public function deleteUser()
+    {
+        return $this->delete();
+    }
 }
