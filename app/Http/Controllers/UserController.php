@@ -6,32 +6,28 @@ use App\Models\Role;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Log;
 
 class UserController extends Controller
 {
     public function index()
     {
-        $users = User::all();
+        $users = User::paginate(10);
         return view('pages.users.index')->with('users', $users);
     }
 
     public function create()
     {
-        return view('pages.users.create');
+        $role = Role::all();
+        return view('pages.users.create')->with('roles', $role);
     }
 
     public function edit($id)
     {
         $user = User::findOrFail($id);
         $roles = Role::all();
-       return view('pages.users.edit')->with(compact('user', 'roles'));
-    }
-
-    public function show($id)
-    {
-        $user = User::findOrFail($id);
-        return view('pages.users.show')->with('user', $user);
+        return view('pages.users.edit')->with(compact('user', 'roles'));
     }
 
     public function store(Request $request)
@@ -57,23 +53,23 @@ class UserController extends Controller
     public function update(Request $request, $id)
     {
         $request->validate([
-            'name' => 'sometimes|required|string|max:255',
-            'email' => 'sometimes|required|email|unique:users,email,' . $id,
-            'password' => 'sometimes|nullable|string|min:8',
+            'name' => 'nullable|string|max:255',
+            'email' => 'nullable|email|unique:users,email,' . $id,
         ]);
-
         DB::beginTransaction();
         try {
             $user = User::findOrFail($id);
             $user->updateUser($request->all());
+
             DB::commit();
             return redirect()->back()->with('success', 'User updated successfully.');
         } catch (\Exception $e) {
             DB::rollBack();
             Log::error('Error updating user: ' . $e->getMessage());
-            return redirect()->back()->with('error', 'Error updating user.');
+            return redirect()->back()->with('error', 'Error updating user.' . $e->getMessage());
         }
     }
+
 
     public function destroy($id)
     {
