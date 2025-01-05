@@ -10,7 +10,7 @@
                         <div class="item">
                             <div class="item_inner">
                                 <div class="image">
-                                    <img src="images/food-1.jpg" alt="Services Image">
+                                    <img src="{{ asset('assets/menu/images/food-1.jpg') }}" alt="Services Image">
                                     <a  href="services.html"></a>
                                 </div>
                                 <h3><a href="services.html">Lorem ipsum dolor</a></h3>
@@ -20,7 +20,7 @@
                         <div class="item">
                             <div class="item_inner">
                                 <div class="image">
-                                    <img src="images/food-2.jpg" alt="Services Image">
+                                    <img src="{{ asset('assets/menu/images/food-2.jpg') }}" alt="Services Image">
                                     <a  href="services.html"></a>
                                 </div>
                                 <h3><a href="services.html">Lorem samet</a></h3>
@@ -30,7 +30,7 @@
                         <div class="item">
                             <div class="item_inner">
                                 <div class="image">
-                                    <img src="images/food-3.jpg" alt="Services Image">
+                                    <img src="{{ asset('assets/menu/images/food-3.jpg') }}" alt="Services Image">
                                     <a  href="services.html"></a>
                                 </div>
                                 <h3><a href="services.html">Lorem ipsum dolor s amet</a></h3>
@@ -40,7 +40,7 @@
                         <div class="item">
                             <div class="item_inner">
                                 <div class="image">
-                                    <img src="images/food-4.jpg" alt="Services Image">
+                                    <img src="{{ asset('assets/menu/images/food-4.jpg') }}" alt="Services Image">
                                     <a  href="services.html"></a>
                                 </div>
                                 <h3><a href="services.html">Lorem samet</a></h3>

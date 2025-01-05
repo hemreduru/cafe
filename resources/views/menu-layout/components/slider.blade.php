@@ -1,13 +1,13 @@
 
 <!-- REVOLUTION SLIDER -->
 
-<div id="rev_slider_34_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="news-gallery34" style="margin:0px auto;background-color:#ffffff;padding:0px;margin-top:0px;margin-bottom:0px;">
+<div id="rev_slider_34_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="news-gallery34" style="margin:0px auto;background-color:#ffffff;padding:0px; margin-top:0px; margin-bottom:0px;">
     <!-- START REVOLUTION SLIDER 5.0.7 fullwidth mode -->
     <div id="rev_slider_34_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.0.7">
         <ul>	<!-- SLIDE  -->
             <li data-index="rs-129" data-transition="fade" data-slotamount="default" data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7"  data-title="Fish &nbsp; Steak" data-description="Duis autem vel eum iriure dolor in hendrerit">
                 <!-- MAIN IMAGE -->
-                <img src="images/banner2.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                <img src="{{ asset('assets/menu/images/banner2.jpg') }}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
                 <!-- LAYER NR. 2 -->
                 <h1 class="tp-caption tp-resizeme"
                     data-x="left" data-hoffset="15"
@@ -51,9 +51,8 @@
 
 
             </li>
-
             <li class="text-center" data-index="rs-130" data-transition="slideleft" data-slotamount="default" data-rotate="0"  data-title="Bakery &nbsp; Items" data-description="Duis autem vel eum iriure dolor in hendrerit">
-                <img src="images/banner1.jpg"  alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                <img src="{{ asset('assets/menu/images/banner1.jpg') }}"  alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
                 <h1 class="tp-caption tp-resizeme"
                     data-x="center" data-hoffset="15"
                     data-y="70"
@@ -99,7 +98,7 @@
             </li>
 
             <li class="text-right" data-index="rs-131" data-transition="slideleft"   data-rotate="0" data-title="Fresh &nbsp; Food" data-description="Duis autem vel eum iriure dolor in hendrerit">
-                <img src="images/banner4.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                <img src="{{ asset('assets/menu/images/banner4.jpg') }}" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
                 <h1 class="tp-caption tp-resizeme"
                     data-x="right" data-hoffset=""
                     data-y="70"

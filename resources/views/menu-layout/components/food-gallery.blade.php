@@ -24,7 +24,7 @@
                             <div class="wrap-col">
                                 <div class="item-container">
                                     <div class="image">
-                                        <img src="images/gallery1.jpg" alt="cook"/>
+                                        <img src="{{ asset('assets/menu/images/gallery1.jpg') }}" alt="cook"/>
                                         <div class="overlay">
                                             <a class="video fancybox.iframe overlay-inner" href="https://player.vimeo.com/video/94224205?autoplay=1"><i class=" icon-eye6"></i></a>
                                         </div>
@@ -36,9 +36,9 @@
                             <div class="wrap-col">
                                 <div class="item-container">
                                     <div class="image">
-                                        <img src="images/galler2.jpg" alt="cook"/>
+                                        <img src="{{ asset('assets/menu/images/galler2.jpg') }}" alt="cook"/>
                                         <div class="overlay">
-                                            <a class="fancybox overlay-inner" href="images/galler2.jpg" data-fancybox-group="gallery"><i class=" icon-eye6"></i></a>
+                                            <a class="fancybox overlay-inner" href="{{ asset('assets/menu/images/galler2.jpg') }}" data-fancybox-group="gallery"><i class=" icon-eye6"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -48,9 +48,9 @@
                             <div class="wrap-col">
                                 <div class="item-container">
                                     <div class="image">
-                                        <img src="images/gallery3.jpg" alt="cook"/>
+                                        <img src="{{ asset('assets/menu/images/gallery3.jpg') }}" alt="cook"/>
                                         <div class="overlay">
-                                            <a class="fancybox overlay-inner" href="images/gallery3.jpg" data-fancybox-group="gallery"><i class=" icon-eye6"></i></a>
+                                            <a class="fancybox overlay-inner" href="{{ asset('assets/menu/images/gallery3.jpg') }}" data-fancybox-group="gallery"><i class=" icon-eye6"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -60,9 +60,9 @@
                             <div class="wrap-col">
                                 <div class="item-container">
                                     <div class="image">
-                                        <img src="images/gallery4.jpg" alt="cook"/>
+                                        <img src="{{ asset('assets/menu/images/gallery4.jpg') }}" alt="cook"/>
                                         <div class="overlay">
-                                            <a class="fancybox overlay-inner" href="images/gallery4.jpg" data-fancybox-group="gallery"><i class=" icon-eye6"></i></a>
+                                            <a class="fancybox overlay-inner" href="{{ asset('assets/menu/images/gallery4.jpg') }}" data-fancybox-group="gallery"><i class=" icon-eye6"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -72,9 +72,9 @@
                             <div class="wrap-col">
                                 <div class="item-container">
                                     <div class="image">
-                                        <img src="images/gallery5.jpg" alt="cook"/>
+                                        <img src="i{{ asset('assets/menu/images/gallery5.jpg') }}" alt="cook"/>
                                         <div class="overlay">
-                                            <a class="fancybox overlay-inner" href="images/gallery5.jpg" data-fancybox-group="gallery"><i class=" icon-eye6"></i></a>
+                                            <a class="fancybox overlay-inner" href="{{ asset('assets/menu/images/gallery5.jpg') }}" data-fancybox-group="gallery"><i class=" icon-eye6"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -84,9 +84,9 @@
                             <div class="wrap-col">
                                 <div class="item-container">
                                     <div class="image">
-                                        <img src="images/gallery6.jpg" alt="cook"/>
+                                        <img src="{{ asset('assets/menu/images/gallery6.jpg') }}" alt="cook"/>
                                         <div class="overlay">
-                                            <a class="fancybox overlay-inner" href="images/gallery6.jpg" data-fancybox-group="gallery"><i class=" icon-eye6"></i></a>
+                                            <a class="fancybox overlay-inner" href="{{ asset('assets/menu/images/gallery6.jpg') }}" data-fancybox-group="gallery"><i class=" icon-eye6"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -96,9 +96,9 @@
                             <div class="wrap-col">
                                 <div class="item-container">
                                     <div class="image">
-                                        <img src="images/gallery7.jpg" alt="cook"/>
+                                        <img src="{{ asset('assets/menu/images/gallery7.jpg') }}" alt="cook"/>
                                         <div class="overlay">
-                                            <a class="fancybox overlay-inner" href="images/gallery7.jpg" data-fancybox-group="gallery"><i class=" icon-eye6"></i></a>
+                                            <a class="fancybox overlay-inner" href="i{{ asset('assets/menu/images/gallery7.jpg') }}" data-fancybox-group="gallery"><i class=" icon-eye6"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -108,7 +108,7 @@
                             <div class="wrap-col">
                                 <div class="item-container">
                                     <div class="image">
-                                        <img src="images/gallery8.jpg" alt="cook"/>
+                                        <img src="{{ asset('assets/menu/images/gallery8.jpg') }}" alt="cook"/>
                                         <div class="overlay">
                                             <a class="video fancybox.iframe overlay-inner" href="https://player.vimeo.com/video/94224205?autoplay=1"><i class=" icon-eye6"></i></a>
                                         </div>
